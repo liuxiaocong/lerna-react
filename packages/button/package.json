@@ -1,0 +1,16 @@
+{
+  "name": "button",
+  "version": "0.0.2",
+  "main": "src/index.jsx",
+  "module": "src/index.jsx",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1"
+  },
+  "peerDependencies": {
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "styled-components": "^5.2.1"
+  }
+}
