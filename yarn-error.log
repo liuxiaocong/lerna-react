@@ -1,0 +1,45 @@
+Arguments: 
+  /Users/evan.liu/.nvm/versions/node/v15.5.1/bin/node /Users/evan.liu/.nvm/versions/node/v15.5.1/bin/yarn run bootstrap
+
+PATH: 
+  /Users/evan.liu/.nvm/versions/node/v15.5.1/bin:/Users/evan.liu/.nvm/versions/node/v8.1.4/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  15.5.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/evan.liu/githug/lerna-react/package.json: Unexpected token } in JSON at position 365
+      at JSON.parse (<anonymous>)
+      at /Users/evan.liu/.nvm/versions/node/v15.5.1/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/evan.liu/.nvm/versions/node/v15.5.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/evan.liu/.nvm/versions/node/v15.5.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "root",
+    "private": true,
+    "workspaces": [
+      "packages/*"
+    ],
+    "scripts": {
+      "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js",
+      "bootstrap": "lerna bootstrap --use-workspaces",
+      "start": "lerna exec --scope app -- npm start "
+    },
+    "devDependencies": {
+      "lerna": "^4.0.0",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
